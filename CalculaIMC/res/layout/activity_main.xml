@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.miguel.calculaimc.MainActivity"
+    android:orientation="vertical"
+    android:layout_centerInParent="true" >
+	    
+    <TextView
+        android:id="@+id/labelPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/peso" />
+    
+     <EditText
+        android:id="@+id/selectorPeso"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelPeso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/labelAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelPeso"
+        android:layout_below="@+id/selectorPeso"
+        android:layout_marginTop="30dp"
+        android:text="@string/altura" />
+   
+    <EditText
+        android:id="@+id/selectorAltura"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelAltura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"  />
+    
+    <TextView
+        android:id="@+id/labelIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectorAltura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="@string/imc"
+        android:ems="15" />
+	
+    <TextView
+        android:id="@+id/IMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelIMC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:ems="20" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelIMC"
+        android:layout_below="@+id/selectorAltura"
+        android:layout_marginTop="33dp"
+        android:text="IMC" 
+        android:onClick="calculaIMC"/>
+	    
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="peso_max">120</integer>
+    <integer name="peso_sel">65</integer>
+    <integer name="peso_min">1</integer>
+    <integer name="altura_max">240</integer>
+    <integer name="altura_sel">170</integer>
+    <integer name="altura_min">1</integer>
+</resources>
